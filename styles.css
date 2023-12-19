@@ -7,16 +7,16 @@ body {
 
 h1 {
     background-color: #0fb9b1;
-    padding: 18px 18px;
-    text-align: justify;
+    padding: 18px;
     font-weight: light 300;
     font-size: 1.5em;
+    margin: 0;
 }
 
 section {
    background-color:rgba(225, 225, 225, .9);
-   padding: 0px 40px;
-   height: 400px;
+   padding: 0px 60px;
+   height: 450px;
    width: 800px;
    margin: 50px 135px ;
    display: flex;
@@ -45,6 +45,7 @@ section:nth-child(2) {
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
  }
 
 h2 {
@@ -58,21 +59,64 @@ div {
 
 button {
     line-height: 2;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+
+button:focus {
+    background-color: rgb(0, 128, 255);
+    border-color: white ;
+    box-shadow: 0 0 0 2px rgb(0, 128, 255);
 }
 
 #lets-cook-button {
     border-radius: 9px;
     background-color: #0fb9b1;
-    padding: 5px 50px;
+    padding: 5px 45px;
     margin: 10px 0px;
     border: none;
     font-size: 1em;
+    width:auto;
+    height:auto;
+    
+}
+
+#lets-cook-button:hover {
+    background-color: rgb(62, 207, 193);
+    transition: 0.5s;
+}
+
+#clear-button {
+    border-radius: 9px;
+    background-color: #8cc8c5;
+    padding: 5px 25px;
+    margin: 10px 0px;
+    border: none;
+    font-size: 1em;
+    width:auto;
+    height:auto;
 }
 
 svg {
     width: 175px;
     height: 175px;
 }
+
+.hidden {
+    display: none;
+}
+
+#show-recipe-box {
+    font-style: italic;
+}
+
+#recipe-suggestion {
+    font-size: 2.5em;
+    font-style: bold;
+}
+
 
 /* COLORS
 teal - #0fb9b1;
