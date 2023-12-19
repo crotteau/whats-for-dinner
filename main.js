@@ -28,7 +28,6 @@ dessertsButton.addEventListener('click', chooseArray)
 entireMealButton.addEventListener('click', chooseArray)
 
 letsCookButton.addEventListener('click', showRecipes)
-// clearButton = document.querySelector('click', resetSuggestions)
 
 function chooseRandomIndex(array) {
     var randomIndex = Math.floor(Math.random() * array.length)
@@ -38,6 +37,9 @@ function chooseRandomIndex(array) {
 function showRecipes() {
     cookPot.classList.add('hidden')
     clearButton.classList.remove('hidden')
+    showRecipe.classList.remove('hidden')
+    recipeSuggestion.classList.remove('hidden')
+    clearButton.addEventListener('click', resetSuggestions)
 
     if (mealsArray !== 'Choose Entire Meal') {
     var randomRecipe = chooseRandomIndex(mealsArray)
@@ -72,3 +74,9 @@ function chooseArray() {
     return mealsArray
 }
 
+function resetSuggestions() {
+    cookPot.classList.remove('hidden')
+    clearButton.classList.add('hidden')
+    showRecipe.classList.add('hidden')
+    recipeSuggestion.classList.add('hidden')
+}
