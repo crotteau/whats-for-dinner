@@ -1,15 +1,11 @@
-// adjust sizing of show recipe text, it should say:
-// 'You should make {NAME OF RECIPE}!'
-// figure out how to pass in argument in event listener
-// ***toggle cook pot icon
-
 var sides = ['Hummus', 'Tabbouleh', 'Baba Ganoush', 'Tzatziki', 'Dolma', 'Greek Salad', 'Falafel', 'Fattoush', 'Muhammara', 'Spanakopita']
-var mainDishes = ['Chicken Shawarma', 'Lamb Kofta', 'Paella', 'Gyro Platter', 'Moussaka', 'Souvlaki', 'Caponata']
+var mainDishes = ['Chicken Shawarma', 'Lamb Kofta', 'Paella', 'Gyro Platter', 'Moussaka', 'Souvlaki', 'Caponata', 'Trout']
 var desserts = ['Baklava', 'Tiramisu', 'Creme brulee', 'Cheesecake', 'Chocolate Cake']
 var entireMeal = []
 var currentDish = ''
 var mealsArray;
 var buttonHasFocus;
+var clickedButtonColor;
 
 var sidesButton = document.querySelector('#side-button')
 var mainDishesButton = document.querySelector('#main-dish-button')
@@ -56,7 +52,7 @@ function showRecipes() {
         var dessertDish = desserts[randomDessert]
 
         showRecipe.innerText = 'You should make: '
-        recipeSuggestion.innerText = `${sideDish}, ${mainDish}, and ${dessertDish}!`
+        recipeSuggestion.innerText = `${mainDish} with a side of ${sideDish} and ${dessertDish} for dessert!`
     }
 }
 
@@ -68,7 +64,7 @@ function chooseArray() {
         mealsArray = mainDishes
     } else if (buttonHasFocus.id === 'dessert-button') {
         mealsArray = desserts
-    } else { 
+    } else if (buttonHasFocus.id === 'entire-meal-button') { 
         mealsArray = 'Choose Entire Meal'
     }
     return mealsArray
