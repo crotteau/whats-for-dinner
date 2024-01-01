@@ -7,7 +7,7 @@ Deciding what to cook for dinner is often a chore and this app provides recipe s
 Installing this app is relatively simple. First open the 'whats-for-dinner' repository in GitHub. Click on the green 'code' button to clone the project onto your computer. Open up the project and html file to use the app!  (What steps does a person have to take to get your app cloned down and running?)
 
 ### Preview of App:
-![Add recipe feature](/assets/addRecipe.png)
+![Add recipe feature](./assets/addRecipe.png)
 
 ### Context:
 I spent around 15 hours creating this project. The biggest hurdle for me was creating the right CSS elements to match the reference photo. It took some trouble shooting to figure out how to target the desired elements and how to correctly manipulate them. This was one of my first introductions to using CSS and HTML code, so it was a learning experience. 
