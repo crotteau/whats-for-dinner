@@ -1,51 +1,27 @@
-# What's for Dinner?
-
-## Overview
-
-What's for dinner? The ultimate question. You will be building an app that helps users choose a recipe and put together meals. 
-
-This Solo Challenge gives students and instructors the opportunity to get a pulse on where you are with the foundational concepts of Module 1 curriculum. Students should use this as an opportunity to challenge themselves and work completely independently. Google can (and probably should!) be used, but any other code base should not be referenced. Instructors will be able to use your work, both completion of functionality and code quality, to determine where you stand and if you are behind for this point in the module, provide supports to intervene.
-
-The spec for this project can be found [here](https://frontend.turing.edu/projects/module-1/dinner.html). 
-
-## Learning Goals
-
-- Gain experience building an application that utilizes HTML, CSS and JavaScript
-- Write HTML and CSS to match a provided comp
-- Understand how to listen to and respond to user events
-- Individualize your programming skill set
-
-## Setup
-
-- Fork this project to your own Github account
-- Clone the repository to your local machine
-- `cd` into the project
-- Read this README thoroughly, then begin working!
-
-______________________________________________________  
-# README Template  
-Before turning this project in, erase this line and everything above it and fill in the info below.  
-______________________________________________________  
-
 # What's for Dinner? 
 
 ### Abstract:
-[//]: <> (Briefly describe what you built and its features. What problem is the app solving? How does this application solve that problem?)
+Deciding what to cook for dinner is often a chore and this app provides recipe suggestions for those instances. The user can get suggestions for side dishes, main dishes, desserts, or entire meals. If the user wants to add their own recipe to possible suggestions, they can specify recipe type and the recipe name is added to that specific category. 
 
 ### Installation Instructions:
-[//]: <> (What steps does a person have to take to get your app cloned down and running?)
+Installing this app is relatively simple. First open the 'whats-for-dinner' repository in GitHub. Click on the green 'code' button to clone the project onto your computer. Open up the project and html file to use the app!  (What steps does a person have to take to get your app cloned down and running?)
 
 ### Preview of App:
-[//]: <> (Provide ONE gif or screenshot of your application - choose the "coolest" piece of functionality to show off.)
+![Add recipe feature](/assets/addRecipe.png)
 
 ### Context:
-[//]: <> (Give some context for the project here. How long did you have to work on it? How far into the Turing program are you?)
+I spent around 15 hours creating this project. The biggest hurdle for me was creating the right CSS elements to match the reference photo. It took some trouble shooting to figure out how to target the desired elements and how to correctly manipulate them. This was one of my first introductions to using CSS and HTML code, so it was a learning experience. 
 
 ### Contributors:
-[//]: <> (Who worked on this application? Link to their GitHubs.)
+[Megan Crotteau's GitHub](https://github.com/crotteau)
 
 ### Learning Goals:
-[//]: <> (What were the learning goals of this project? What tech did you work with?)
+The goals for this project were: 
+-gain additional experience using JavaScript, CSS, and HTML
+-create a useful application that a user can interact with
+-build an app layout using CSS and HTML that visually matches a comp 
 
 ### Wins + Challenges:
-[//]: <> (What are 2-3 wins you have from this project? What were some challenges you faced - and how did you get over them?)
+One win I had was getting the 'add recipe' feature to only add recipes if the 'recipe type' was one of the three pre-determined types and if the recipe name input field had been filled out. Another win was getting the page layout to match the comp. Specifically, figuring out what HTML element to target in order to change the desired elements. 
+
+One challenge I had was turning the recipe type buttons blue when they're clicked and switching them back to their unclicked state when another recipe type is clicked. Currently, I have it so the button turns blue when it has focus, but ideally the button would stay blue after the let's cook button is clicked. 
